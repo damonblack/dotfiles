@@ -1,0 +1,54 @@
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[core]
+  editor = vi 
+  excludesfile = /home/dblack/.gitignore_global
+  filemode = true
+  mergeoptions = --no-ff --no-commit
+[merge]
+  tool = vimdiff
+[push] 
+  default = tracking 
+[color] 
+  diff = auto 
+  status = auto 
+  branch = auto 
+[format] 
+  pretty = %Cblue%h%Creset%Cgreen[%cr] %Creset (%an) %s 
+[alias] 
+  c = commit -m 
+  a = add 
+  co = checkout 
+  di = diff 
+  dic = diff --cached 
+  pl = pull 
+  ps = push 
+  plre = pull --rebase 
+  st = status 
+  out = log origin..HEAD 
+  qpl = log --pretty=\"%Cblue%h%Creset %Cgreen[%cr]%Creset %s\" origin/production..origin/master 
+  graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative  
+  ci = commit 
+  ca = commit --amend 
+[github] 
+  user = damonblack 
+  password = pwF0urt33n
+[user] 
+  name = Damon Black 
+  email = black.damon@gmail.com 
+[diff] 
+  external = ~/.git_diff_wrapper 
+[pager] 
+  diff = 
+
