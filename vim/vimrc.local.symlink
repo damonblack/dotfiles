@@ -1,0 +1,36 @@
+map <leader>t <C-P>
+map <leader>v :vsp<CR>
+map <leader>h h
+map <leader>j j
+map <leader>k k
+map <leader>l l
+map <leader>> l
+map <leader>< h
+map <leader>= =
+
+
+nmap <leader>, :tabnew<CR>
+nmap <leader>. :tabnext<CR>
+nmap .<leader> :tabpre<CR>
+nnoremap ; :
+" Run Ruby unit tests with gT (for all) or gt (only test under
+" cursor) in command mode
+augroup RubyTests
+  au!
+  autocmd BufRead,BufNewFile *_test.rb,test_*.rb
+    \ :nmap gt V:<C-U>!$HOME/.vim/bin/ruby-run-focused-unit-test
+    \ % <C-R>=line("'<")<CR>p <CR>|
+    \ :nmap gT :<C-U>!testdrb %<CR>
+  autocmd BufRead,BufNewFile *_spec.rb
+    \ :nmap gs V:<C-U>!$HOME/.vim/bin/ruby-run-focused-spec
+    \ % <C-R>=line("'<")<CR>p <CR>|
+    \ :nmap gS :<C-U>!spring rspec %<CR>
+augroup END
+"nmap gs :call RunNearestSpec()<CR>
+"nmap gS :call RunCurrentSpecFile()<CR>
+
+set shiftwidth=2                " Use indents of 2 spaces
+set tabstop=2                   " An indentation every four columns
+set softtabstop=2               " Let backspace delete indent
+set wrap
+set nolist
