@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-
-filename = ARGV[0]
-line_number = ARGV[1].to_i
-cmd = %{spring rspec -I . "#{filename}:#{line_number}"}
-puts cmd
-system cmd
