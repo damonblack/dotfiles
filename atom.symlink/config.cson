@@ -1,9 +1,15 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "bc864589-f94e-4294-a349-700ebbbdb05e"
+  autosave:
+    enabled: true
   core:
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
+      "vim-mode"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -14,10 +20,6 @@
       "repositories"
       "tmp"
       "vendor"
-    ]
-    themes: [
-      "unity-ui"
-      "glacier-syntax"
     ]
   editor:
     fontFamily: "Menlo"
@@ -37,3 +39,6 @@
     ]
   welcome:
     showOnStartup: false
+".js.source":
+  editor:
+    tabLength: 4

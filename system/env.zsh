@@ -1,1 +1,7 @@
-export EDITOR='atom'
+export EDITOR='vim'
+export twitter_key='DshIBIQRRubkeiLnQYWl8g1FE'
+export twitter_secret='Y7VC7OWxnDhyXM0RkU57W0f0TbquyGoqeEkiuisjThdcD08duM'
+export twitter_access_token='17334356-PBaZmGtUz3Sr5fnBlV2EVc5YrkSqjilr8tglwW3c4'
+export twitter_access_token_secret='h3PQWPN2FBOYkX7MGpDiQGgMtkP3ekaYUPXjjbxyVf2Q3'
+export instagram_key='295f979d307a40d5aa7a95a9fb7be8b9'
+export instagram_secret='289047e259834b2e8f134b0a2191db8d'
