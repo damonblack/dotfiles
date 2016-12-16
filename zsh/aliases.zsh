@@ -8,3 +8,4 @@ alias rgrep="grep -riI --colour --exclude-dir=tmp --exclude-dir=log --exclude-di
 alias sync_sam="rsync -avuz /Volumes/Samsung_T1/Photos/ /Volumes/Data/FreeAgentBackup/Photos"
 alias vi="mvim -v"
 alias glmd="mux glm-hot"
+alias cls='clear' # Good 'ol Clear Screen command
