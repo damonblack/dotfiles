@@ -1,3 +1,7 @@
-Bundle 'ervandew/SuperTab'
-Bundle 'slim-template/vim-slim.git'
-Bundle 'AndrewRadev/vim-eco.git'
+Plugin 'ervandew/SuperTab'
+Plugin 'slim-template/vim-slim.git'
+Plugin 'AndrewRadev/vim-eco.git'
+Plugin 'flowtype/vim-flow'
+Plugin 'scrollcolor', { 'pinned': 1 }
+Plugin 'justinj/vim-react-snippets'
+Plugin 'ervandew/supertab'

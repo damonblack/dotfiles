@@ -43,10 +43,12 @@
   tool = vimdiff
 [mergetool]
   keepBackup = false
-[difftool]
-  prompt = false
 [diff] 
-  tool = vimdiff
+  tool = mvimdiff
+  prompt = false
+[difftool "mvimdiff"]
+  prompt = false
+  cmd = mvim -v -f -d \"$LOCAL\" \"$REMOTE\"
 [help]
   autocorrect = 1
 [push]
