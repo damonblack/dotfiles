@@ -55,4 +55,10 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 
+source ~/.bin/tmuxinator.zsh
+
 load-nvmrc
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="$HOME/.yarn/bin:$PATH"

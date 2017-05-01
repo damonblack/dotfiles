@@ -20,7 +20,7 @@
   branch = auto
   ui = true
 [core]
-  editor = vi 
+  editor = /usr/local/bin/mvim -v
   excludesfile = /home/dblack/.gitignore_global
   filemode = true
   mergeoptions = --no-ff --no-commit
@@ -40,14 +40,11 @@
 [apply]
   whitespace = nowarn
 [merge]
-  tool = vimdiff
-[mergetool]
-  keepBackup = false
-[diff] 
   tool = mvimdiff
-  prompt = false
-[difftool "mvimdiff"]
-  prompt = false
+[mergetool "mvimdiff"]
+  cmd = mvim -v -f -d \"$LOCAL\" \"$REMOTE\"
+  keepBackup = false
+[diff]
   cmd = mvim -v -f -d \"$LOCAL\" \"$REMOTE\"
 [help]
   autocorrect = 1
@@ -57,3 +54,5 @@
   #
   # Setting to git 2.0 default to suppress warning message
   default = tracking
+[difftool]
+	prompt = false

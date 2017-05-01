@@ -7,5 +7,6 @@ alias mygrep="grep -riI --colour --exclude-dir=tmp --exclude-dir=log --exclude-d
 alias rgrep="grep -riI --colour --exclude-dir=tmp --exclude-dir=log --exclude-dir=build --exclude-dir=node_modules"
 alias sync_sam="rsync -avuz /Volumes/Samsung_T1/Photos/ /Volumes/Data/FreeAgentBackup/Photos"
 alias vi="mvim -v"
+alias vim="mvim -v"
 alias glmd="mux glm-hot"
 alias cls='clear' # Good 'ol Clear Screen command
